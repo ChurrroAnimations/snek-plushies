@@ -1,4 +1,6 @@
 {
-  "item.snekplushies.levisnekkyplush" : "Levi Plush",
-  "ttip.snekplushies.levisnekkyplush" : "Removes any doubt of the wearer being cute."
+  "sound.snekplushies.plush_squeak" : "Plush Squeaks",
+
+  "item.snekplushies.levi_snekky_plush" : "Levi Plush",
+  "ttip.snekplushies.levi_snekky_plush" : "Removes any doubt of the wearer being cute."
 }

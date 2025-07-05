@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench by Churro",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "snekplushies:item/levi_snekky_plushie",
-		"particle": "snekplushies:item/levi_snekky_plushie"
+		"0": "snekplushies:item/levi_snekky_plush_texture",
+		"particle": "snekplushies:item/levi_snekky_plush_texture"
 	},
 	"elements": [
 		{

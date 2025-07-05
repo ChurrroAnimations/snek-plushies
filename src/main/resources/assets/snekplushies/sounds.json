@@ -1,0 +1,8 @@
+{
+  "plush_squeak" : {
+    "subtitle" : "sound.snekplushies.plush_squeak",
+    "sounds" : [
+      "snekplushies:plush_squeak"
+    ]
+  }
+}

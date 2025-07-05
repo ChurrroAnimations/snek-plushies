@@ -22,7 +22,11 @@ public class Armor {
             ArmorItem.Type.BOOTS, 0
     );
     public static final int materialEnchant = 0;
-    public static final RegistryEntry<SoundEvent> materialNoises = SoundEvents.ITEM_ARMOR_EQUIP_TURTLE;
+    public static final RegistryEntry<SoundEvent> materialNoises = Registry.registerReference(
+            Registries.SOUND_EVENT,
+            SnekPlushies.itemId("plush_squeak"),
+            SoundEvent.of(SnekPlushies.itemId("plush_squeak"))
+    );
     public static final Supplier<Ingredient> materialRepair = () -> Ingredient.empty();
     public static final float materialStrength = 0;
     public static final float materialYeetRes = 0;
