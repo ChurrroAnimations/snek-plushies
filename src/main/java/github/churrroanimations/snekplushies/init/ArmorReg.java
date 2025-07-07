@@ -43,4 +43,3 @@ public class ArmorReg {
 
     public static void armorLoad () {}
 }
-

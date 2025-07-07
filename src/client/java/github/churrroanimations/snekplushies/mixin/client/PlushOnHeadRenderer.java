@@ -26,30 +26,26 @@ public class PlushOnHeadRenderer {
             ItemStack headStack = entity.getEquippedStack(armorSlot);
             Item headItem = headStack.getItem();
             boolean useRenderer = false;
-            double transX = 0D;
-            double transY = 0D;
-            double transZ = 0D;
+            double transX = -0.05D;
+            double transY = -0.25D;
+            double transZ = -0.1D;
             float scaleX = 1F;
             float scaleY = 1F;
             float scaleZ = 1F;
-            float turnX = 0F;
+            float turnX = -90F;
             float turnY = 0F;
-            float turnZ = 0F;
+            float turnZ = 90F;
 
-            /*if (headItem == ItemsReg.leviSnekkyPlushie) {
+            if (headItem == ItemsReg.leviSnekkyPlushie) {
                 useRenderer = true;
-                transX = -0.2D;
-                transY = -0.7D;
-                transZ = -0.15D;
-                turnX = 200F;
-                turnY = 90F;
-            } else*/ if (headItem == ItemsReg.churroTurtlePlushie) {
+            } else if (headItem == ItemsReg.churroTurtlePlushie) {
                 useRenderer = true;
-                transX = -0.2D;
-                transY = -0.7D;
-                transZ = -0.15D;
-                turnX = 200F;
-                turnY = 90F;
+                transX = 0D;
+                transY = -0.55D;
+                scaleX = 0.5F;
+                scaleY = 0.5F;
+                scaleZ = 0.5F;
+                turnX = -80F;
             }
 
             if (useRenderer) {
@@ -61,7 +57,7 @@ public class PlushOnHeadRenderer {
                 matrices.translate(transX, transY, transZ);
                 matrices.scale(scaleX, scaleY, scaleZ);
                 matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(turnX));
-                matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(turnY));
+                matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(turnY));
                 matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(turnZ));
 
                 currentClient.getItemRenderer().renderItem(
