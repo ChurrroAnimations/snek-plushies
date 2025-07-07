@@ -1,10 +1,9 @@
 package github.churrroanimations.snekplushies;
 
-import github.churrroanimations.snekplushies.init.Armor;
-import github.churrroanimations.snekplushies.init.Items;
+import github.churrroanimations.snekplushies.init.ArmorReg;
+import github.churrroanimations.snekplushies.init.ItemsReg;
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +15,8 @@ public class SnekPlushies implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initialising");
-		Armor.armorLoad();
-		Items.itemsLoad();
+		ArmorReg.armorLoad();
+		ItemsReg.itemsLoad();
 	}
 
 	public static Identifier itemId (String itemPath) {

@@ -1,6 +1,0 @@
-{
-  "parent" :  "minecraft:item/handheld",
-  "textures" : {
-    "layer0": "snekplushies:item/levi_snekky_plush_texture"
-  }
-}

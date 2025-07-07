@@ -8,13 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 
 import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
-public class Armor {
+public class ArmorReg {
     public static final Map<ArmorItem.Type, Integer> materialProtecc = Map.of(
             ArmorItem.Type.HELMET, 1,
             ArmorItem.Type.CHESTPLATE, 0,

@@ -3,7 +3,7 @@
 	"package": "github.churrroanimations.snekplushies.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-
+		"PlushOnHeadRenderer"
 	],
 	"injectors": {
 		"defaultRequire": 1
