@@ -1,10 +1,12 @@
 package github.churrroanimations.snekplushies.provider;
 
+import github.churrroanimations.snekplushies.init.BlocksReg;
 import github.churrroanimations.snekplushies.init.ItemsReg;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -18,7 +20,7 @@ public class SnekPlusiesRecipies extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(RecipeExporter plushRecipeExporter) {
+    public void generate(RecipeExporter snekPlushiesRecipeExporter) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemsReg.leviSnekkyPlushie)
                 .input('G', Items.GRAY_WOOL)
                 .input('L', Items.LIME_WOOL)
@@ -28,7 +30,7 @@ public class SnekPlusiesRecipies extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GRAY_WOOL), conditionsFromItem(Items.GRAY_WOOL))
                 .criterion(hasItem(Items.GRAY_WOOL), conditionsFromItem(Items.LIME_WOOL))
                 .criterion(hasItem(Items.GRAY_WOOL), conditionsFromItem(Items.YELLOW_DYE))
-                .offerTo(plushRecipeExporter);
+                .offerTo(snekPlushiesRecipeExporter);
 
 
 
@@ -39,6 +41,18 @@ public class SnekPlusiesRecipies extends FabricRecipeProvider {
                 .pattern(" LL")
                 .criterion(hasItem(Items.GREEN_WOOL), conditionsFromItem(Items.GREEN_WOOL))
                 .criterion(hasItem(Items.LIME_DYE), conditionsFromItem(Items.LIME_DYE))
-                .offerTo(plushRecipeExporter);
+                .offerTo(snekPlushiesRecipeExporter);
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksReg.transWool, 5)
+                .input(Items.LIGHT_BLUE_WOOL)
+                .input(Items.PINK_WOOL)
+                .input(Items.WHITE_WOOL)
+                .input(Items.PINK_WOOL)
+                .input(Items.LIGHT_BLUE_WOOL)
+                .criterion(hasItem(Items.LIGHT_BLUE_WOOL), conditionsFromItem(Items.LIGHT_BLUE_WOOL))
+                .criterion(hasItem(Items.PINK_WOOL), conditionsFromItem(Items.PINK_WOOL))
+                .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
+                .offerTo(snekPlushiesRecipeExporter);
     }
 }

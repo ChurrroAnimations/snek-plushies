@@ -23,8 +23,8 @@ public class ArmorReg {
     public static final int materialEnchant = 0;
     public static final RegistryEntry<SoundEvent> materialNoises = Registry.registerReference(
             Registries.SOUND_EVENT,
-            SnekPlushies.itemId("plush_squeak"),
-            SoundEvent.of(SnekPlushies.itemId("plush_squeak"))
+            SnekPlushies.assetId("plush_squeak"),
+            SoundEvent.of(SnekPlushies.assetId("plush_squeak"))
     );
     public static final Supplier<Ingredient> materialRepair = () -> Ingredient.empty();
     public static final float materialStrength = 0;
@@ -33,9 +33,9 @@ public class ArmorReg {
 
     public static RegistryEntry<ArmorMaterial> plushMaterialReg (String materialName) {
 
-        List<ArmorMaterial.Layer> materialLayers = List.of(new ArmorMaterial.Layer(SnekPlushies.itemId(materialName), "", materialColorable));
+        List<ArmorMaterial.Layer> materialLayers = List.of(new ArmorMaterial.Layer(SnekPlushies.assetId(materialName), "", materialColorable));
         var armorMaterial = new ArmorMaterial(materialProtecc, materialEnchant, materialNoises, materialRepair, materialLayers, materialStrength, materialYeetRes);
-        var regedMaterial = Registry.register(Registries.ARMOR_MATERIAL, SnekPlushies.itemId(materialName), armorMaterial);
+        var regedMaterial = Registry.register(Registries.ARMOR_MATERIAL, SnekPlushies.assetId(materialName), armorMaterial);
 
 
         return RegistryEntry.of(regedMaterial);

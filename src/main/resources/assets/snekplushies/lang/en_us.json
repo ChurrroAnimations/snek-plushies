@@ -1,10 +1,14 @@
 {
   "sound.snekplushies.plush_squeak" : "Plush Squeaks",
 
+  "block.snekplushies.trans_wool" : "Transgender Wool",
+  "ttip.snekplushies.trans_wool" : "Trans rights are human rights!",
+
+  "block.snekplushies.gay_wool" : "Gay Wool",
+  "ttip.snekplushies.gay_wool" : "Gay rights are not special rights!",
+
   "item.snekplushies.levi_snekky_plush" : "Levi Plush",
   "ttip.snekplushies.levi_snekky_plush" : "Removes any doubt of the wearer being cute.",
-
-
 
   "item.snekplushies.churro_turtle_plush" : "Churro Plush",
   "ttip.snekplushies.churro_turtle_plush" : "The creator of the mod, now as a marketable plush!"

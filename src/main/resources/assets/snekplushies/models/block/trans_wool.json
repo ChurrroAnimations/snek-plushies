@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "snekplushies:block/trans_wool_top",
+    "side": "snekplushies:block/trans_wool"
+  }
+}

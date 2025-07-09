@@ -1,6 +1,7 @@
 package github.churrroanimations.snekplushies;
 
 import github.churrroanimations.snekplushies.init.ArmorReg;
+import github.churrroanimations.snekplushies.init.BlocksReg;
 import github.churrroanimations.snekplushies.init.ItemsReg;
 import net.fabricmc.api.ModInitializer;
 
@@ -17,9 +18,10 @@ public class SnekPlushies implements ModInitializer {
 		LOGGER.info("Initialising");
 		ArmorReg.armorLoad();
 		ItemsReg.itemsLoad();
+		BlocksReg.blocksLoad();
 	}
 
-	public static Identifier itemId (String itemPath) {
+	public static Identifier assetId(String itemPath) {
 		return Identifier.of(MODID, itemPath);
 	}
 }

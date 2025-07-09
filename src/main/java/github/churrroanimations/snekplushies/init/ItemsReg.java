@@ -3,10 +3,7 @@ package github.churrroanimations.snekplushies.init;
 import github.churrroanimations.snekplushies.SnekPlushies;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -20,9 +17,6 @@ public class ItemsReg {
     public static final Item churroTurtlePlushie = regPlushItem("churro_turtle_plush", churroMaterial);
 
 
-
-
-
     public static void addItemsToCreativeInv (FabricItemGroupEntries itemsGroup) {
         itemsGroup.add(ItemsReg.leviSnekkyPlushie);
         itemsGroup.add(ItemsReg.churroTurtlePlushie);
@@ -33,7 +27,7 @@ public class ItemsReg {
     }
 
     public static <ItemClass extends Item> ItemClass itemReg (String itemName, ItemClass itemData) {
-        return Registry.register(Registries.ITEM, SnekPlushies.itemId(itemName), itemData);
+        return Registry.register(Registries.ITEM, SnekPlushies.assetId(itemName), itemData);
     }
 
     public static void itemsLoad() {

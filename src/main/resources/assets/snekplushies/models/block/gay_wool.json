@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "snekplushies:block/gay_wool_dom",
+    "bottom": "snekplushies:block/gay_wool_sub",
+    "side": "snekplushies:block/gay_wool",
+    "particle": "minecraft:block/yellow_wool"
+  }
+}
