@@ -8,8 +8,14 @@
   "ttip.snekplushies.gay_wool" : "Gay rights are not special rights!",
 
   "item.snekplushies.levi_snekky_plush" : "Levi Plush",
-  "ttip.snekplushies.levi_snekky_plush" : "Removes any doubt of the wearer being cute.",
+  "ttip.snekplushies.levi_snekky_plush" : "Makes the wearer inarguably cute.",
 
   "item.snekplushies.churro_turtle_plush" : "Churro Plush",
-  "ttip.snekplushies.churro_turtle_plush" : "The creator of the mod, now as a marketable plush!"
+  "ttip.snekplushies.churro_turtle_plush" : "The creator of the mod, now as a marketable plush!",
+
+  "item.snekplushies.cherry_snekky_plush" : "Cherry Plush",
+  "ttip.snekplushies.cherry_snekky_plush" : "Not actually a fruit; consumption is not advised.",
+
+  "item.snekplushies.grim_pupper_plush" : "Grim Plush",
+  "ttip.snekplushies.grim_pupper_plush" : "His last name is not Reaper, however he may kill you with cuteness."
 }

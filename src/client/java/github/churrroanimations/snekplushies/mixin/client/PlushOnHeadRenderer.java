@@ -46,7 +46,14 @@ public class PlushOnHeadRenderer {
                 scaleY = 0.5F;
                 scaleZ = 0.5F;
                 turnX = -80F;
+            } else if (headItem == ItemsReg.cherrySnekkyPlushie) {
+                useRenderer = true;
+                transY = -0.3D;
+                transZ = 0;
+            } else if (headItem == ItemsReg.grimPupperPlushie) {
+                useRenderer = true;
             }
+
 
             if (useRenderer) {
                 MinecraftClient currentClient = MinecraftClient.getInstance();

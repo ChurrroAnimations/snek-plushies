@@ -9,17 +9,28 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 
 public class ItemsReg {
+    // Make Levi a marketable plushie
     public static final RegistryEntry<ArmorMaterial> leviMaterial = ArmorReg.plushMaterialReg("levi_material");
     public static final Item leviSnekkyPlushie = regPlushItem("levi_snekky_plush", leviMaterial);
 
-
+    // Make Churro a marketable plushie
     public static final RegistryEntry<ArmorMaterial> churroMaterial = ArmorReg.plushMaterialReg("churro_material");
     public static final Item churroTurtlePlushie = regPlushItem("churro_turtle_plush", churroMaterial);
+
+    // Make Churro a marketable plushie
+    public static final RegistryEntry<ArmorMaterial> cherryMaterial = ArmorReg.plushMaterialReg("cherry_material");
+    public static final Item cherrySnekkyPlushie = regPlushItem("cherry_snekky_plush", cherryMaterial);
+
+    // Make Grim a marketable plushie
+    public static final RegistryEntry<ArmorMaterial> grimMaterial = ArmorReg.plushMaterialReg("grim_material");
+    public static final Item grimPupperPlushie = regPlushItem("grim_pupper_plush", grimMaterial);
 
 
     public static void addItemsToCreativeInv (FabricItemGroupEntries itemsGroup) {
         itemsGroup.add(ItemsReg.leviSnekkyPlushie);
         itemsGroup.add(ItemsReg.churroTurtlePlushie);
+        itemsGroup.add(ItemsReg.cherrySnekkyPlushie);
+        itemsGroup.add(ItemsReg.grimPupperPlushie);
     }
 
     public static Item regPlushItem (String plushName, RegistryEntry<ArmorMaterial> plushMaterial) {
