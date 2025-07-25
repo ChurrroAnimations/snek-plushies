@@ -26,6 +26,9 @@ public class ItemsReg {
     public static final Item grimPupperPlushie = regPlushItem("grim_pupper_plush", grimMaterial);
 
 
+    // Book of Plushies
+    public static final Item bookOfPlushies = itemReg("book_of_plushies", new BookOfPlushies(new Item.Settings().maxCount(1)));
+
     public static void addItemsToCreativeInv (FabricItemGroupEntries itemsGroup) {
         itemsGroup.add(ItemsReg.leviSnekkyPlushie);
         itemsGroup.add(ItemsReg.churroTurtlePlushie);
